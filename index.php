@@ -1,7 +1,10 @@
 <?php
-require 'Model/model.php';
+require 'Model/modelreg.php';
 require 'View/viewreg.php';
-require 'Controller/controller.php';
+require 'Controller/controllerreg.php';
+require 'Model/modellog.php';
+require 'View/viewlog.php';
+require 'Controller/controllerlog.php';
 
 
 

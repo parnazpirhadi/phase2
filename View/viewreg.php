@@ -1,4 +1,5 @@
 <html>
+
   <form method="post" >
       <?php echo (isset($message)? $message : ''); ?>
      firstname: <input name="firstname" type="varchar" />
@@ -20,4 +21,5 @@
      <br>
      <input type="submit" name="action" value="register" />
   </form>
+
 </html>

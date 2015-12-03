@@ -1,14 +1,14 @@
 <?php
 
-include './model/myModel.php'; 
-$myModel = new myModel; 
+include './Model/modelreg.php'; 
+$modelreg = new modelreg; 
 if(isset($_POST['action']))
 {
     if($_POST['action']=='register'){
        
 
-//$admin_password = ('1111');
-//mysql_query("INSERT INTO goshopping_users(id,firstname,lastname,username,password,email,address,mobile,gender) VALUES('','admin','admin','admin',md5('$admin_password'),'admin','admin','admin','admin')") or die (mysql_error());
+$admin_password = ('1111');
+mysql_query("INSERT INTO goshopping_users(id,firstname,lastname,username,password,email,address,mobile,gender) VALUES('','admin','admin','admin',md5('$admin_password'),'admin','admin','admin','admin')") or die (mysql_error());
 
 if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['username'])&& isset($_POST['password'])&& isset($_POST['email'])&& isset($_POST['mobile'])&& isset($_POST['gender'])){ 
 
@@ -20,14 +20,13 @@ if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['user
 	$address = mysql_real_escape_string($_POST['address']);
 	$mobile = mysql_real_escape_string($_POST['mobile']);
 	$gender = mysql_real_escape_string($_POST['gender']);
-        $myModel->insert("INSERT INTO goshopping_users
+        $modelreg->insert("INSERT INTO goshopping_users
             (id,firstname,lastname,username,password,email,address,mobile,gender) 
             VALUES('','$firstname','$lastname','$username','$password','$email','$address','$mobile','$gender')") ;
-        echo "vvvvv";
         $view2='./View/viewlog.php';
         return include $viewlog;
 }
-return include $view2;
-}
+    }
      
 }
+?>
