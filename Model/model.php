@@ -6,7 +6,6 @@ Class myModel {
    mysql_select_db("goshopping_db"); 
     }   
         public function insert($sql) {  
-            echo "hgf";
       $query = mysql_query($sql);  
       }    
        public function escape($str) {   

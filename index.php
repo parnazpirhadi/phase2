@@ -1,6 +1,6 @@
 <?php
-require 'View/viewreg.php';
 require 'Model/model.php';
+require 'View/viewreg.php';
 require 'Controller/controller.php';
 
 
