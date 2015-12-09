@@ -1,0 +1,129 @@
+/* CSS Document */
+/* CSS Document */
+*{
+ padding:0px;
+ margin:0px;
+ box-sizing:border-box;}
+ 
+ a{
+ text-decoration:none;
+ 
+ }
+ 
+li{
+ list-style:none;
+}
+
+ul{
+ list-style:none;
+}
+
+/***************** responsive *********************/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+ float: right;
+}
+/*************************************/
+.head{
+ height:auto;
+ background-color:#dcdcdc;
+ }
+ 
+ 
+ body{
+	 background:#ffffff !important;
+	 
+	 }
+ 
+.menu{
+ float:right;
+ margin-right:0px;
+ }
+.menu ul li {
+ display:inline-block;
+ list-style:none;
+ background:#dcdcdc;
+	transition:color .2s,border-color .2s;
+ 
+ padding-top:20px;
+ width:150px;
+ text-align:center;
+ height:80px;
+/* border:1px solid black*/;}
+ 
+.menu a{
+	line-height:36px;
+
+ text-decoration:none;
+ color:rgba(0,0,0,1.00);
+ width:100%;
+ font-weight:800;
+ font-size:16px;
+ font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+ }
+  .menu ul li:hover{
+	  color:rgba(225,63,40,1.00);
+	  border-bottom:1px solid rgba(225,63,40,1.00);
+	  
+	  }
+
+img{ height:80px;
+width:80px;}
+
+
+
+.product_menu{
+ margin-top:20px;
+ /*<!--border:1px solid black;-->*/
+ float:right !important;
+ direction:rtl;
+ right:5px;
+ padding:10px;
+ }
+ 
+.product_menu ul li {
+ border:1px solid black;
+ width:100%;
+ background-color:#C88485;
+ text-align:center;
+ padding:10px;
+ }
+.product_menu ul li a{
+ color:#843F16;
+ font:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+ font-weight:600;
+}
+
+
+
+.logo{float:left;
+height:80px !important;
+
+alignment-baseline:baseline;}
+
+.moto{float: left;
+/*margin-left:5px;*/
+display:inline-block;
+
+alignment-baseline:baseline;}
+
+.moto span{padding:90;
+color: #94191B;
+font: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+font-weight: 400;
+font-size:18px;
+}
+.
+

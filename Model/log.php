@@ -9,12 +9,11 @@ Class modellog {
       public function getRow($sql) {   
       $query = mysql_query($sql);  
        return mysql_fetch_assoc($query);
-      }    
+      }
       public function user_login ($username, $password) { 
         $username = mysql_real_escape_string($username); 
         $password = md5($password);
         $result = mysql_query("SELECT * FROM goshopping_users WHERE username = '".$username."' AND password = '".$password."' LIMIT 1"); 
-
         $row = mysql_fetch_object($result);
         
         ?> <pre>

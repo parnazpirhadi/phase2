@@ -1,0 +1,9 @@
+/* CSS Document */
+.delivery {
+	direction:rtl !important;
+	text-align:justify;
+	}
+
+.delivery p {
+	direction:rtl;
+	}	

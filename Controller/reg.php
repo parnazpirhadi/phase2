@@ -1,8 +1,7 @@
 <?php
 
 class reg{
-    
-
+   
     public function __construct(){
         
         
